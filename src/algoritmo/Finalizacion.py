@@ -48,8 +48,9 @@ class Finalizacion:
         # Obtener listado de fitness
         lista_fitness = [o.fitness for o in poblacion]
         promedio = sum(lista_fitness) / float(len(lista_fitness))
-        if promedio >= 0 or promedio <= 1.5:
+        if promedio >= 0 and promedio <= 1.5:
             fin = min(poblacion, key=lambda x: x.fitness)
+            print(" PROMEDIO  :: ", promedio)
         return fin
 
     def getCriterio(self, criterio):
@@ -57,6 +58,8 @@ class Finalizacion:
             return str(self.porcentaje) + "% de la plobacion con valor fitness igual"
         elif criterio == 2:
             return str(self.maximo_gen) + " numero maximo de generaciones"
+        elif criterio == 3:
+            return "Valor promedio de fitness entre 0 y 1.5"
         return "Retorno de Finalizacion indefinido"
 
 

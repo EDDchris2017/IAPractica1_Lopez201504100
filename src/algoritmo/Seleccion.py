@@ -1,3 +1,4 @@
+import random
 class Seleccion:
 
     def __init__(self):
@@ -24,15 +25,25 @@ class Seleccion:
 
     def seleccion2(self, poblacion):
         mejores_padres = []
-
+        padres_considerar = int(self.porcentaje_padres * len(poblacion) / 100)
+        for i in range(padres_considerar):
+            pos_random = random.randint(0, len(poblacion) - 1)
+            padre = poblacion[pos_random]
+            mejores_padres.append(padre)
         return mejores_padres
     
     def seleccion3(self, poblacion):
         mejores_padres = []
-
+        for i in range(len(poblacion)):
+            if i % 2 == 0:
+                mejores_padres.append(poblacion[i])
         return mejores_padres
     
     def getSeleccion(self, seleccion):
         if seleccion == 1:
             return "Seleccion de padres como el mejor valor fitness => " + str(self.porcentaje_padres) + "% padres seleccionados"
+        elif seleccion == 2:
+            return "Seleccion ALEATORIA de padres => " + str(self.porcentaje_padres) + "% padres seleccionados"
+        elif seleccion == 3:
+            return "Seleccion de padres en posicion pares "
         return "Seleccion indefinida"
