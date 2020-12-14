@@ -14,7 +14,7 @@ def ejecutarModelo():
         archivo = open(f.filename)
         contenido = list(csv.reader(archivo,delimiter=','))
         # Iniciar algoritmo
-        algoritmo = Algoritmo(6, contenido, 1, 2)
+        algoritmo = Algoritmo(100, contenido, 2, 1, f.filename)
         algoritmo.ejecutar()
 
         return 'Archivo cargado de manera exitosa'
