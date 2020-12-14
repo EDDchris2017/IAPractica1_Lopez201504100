@@ -16,7 +16,6 @@ class Seleccion:
         return mejores_padres
     
     def seleccion1(self, poblacion):
-        print ("Seleccion de los mejores padres de la poblacion ")
         mejores_padres = []
         padres_considerar = int(self.porcentaje_padres * len(poblacion) / 100)
         mejores_padres = sorted(poblacion)[:padres_considerar]

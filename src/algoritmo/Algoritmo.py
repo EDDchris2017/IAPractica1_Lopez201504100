@@ -38,6 +38,7 @@ class Algoritmo:
         fin = self.finalizacion.verificarCriterio(self.criterioFin, poblacion, generacion)
         
         while fin == None:
+            print( generacion)
             padres      = self.seleccion.seleccionarPadres(self.criterioPadres, poblacion)
             poblacion   = self.emparejar(padres, len(poblacion))
             generacion  += 1
