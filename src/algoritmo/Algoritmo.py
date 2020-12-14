@@ -48,7 +48,8 @@ class Algoritmo:
         print(fin.solucion)
 
         self.registrarBitacora(cadHoraFecha, generacion, fin.solucion, poblacion)
-        self.imprimirPoblacion(poblacion)
+
+        return fin
     
     def inicializarPoblacion(self):
         poblacion = []

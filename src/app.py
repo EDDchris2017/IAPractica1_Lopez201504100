@@ -18,9 +18,10 @@ def ejecutarModelo():
         contenido = list(csv.reader(archivo,delimiter=','))
         # Iniciar algoritmo
         algoritmo = Algoritmo(poblacion_form, contenido, finalizacion_form, seleccion_form, f.filename)
-        algoritmo.ejecutar()
+        fin = algoritmo.ejecutar()
 
-        return 'Archivo cargado de manera exitosa'
+
+        return render_template("index.html", modelo = fin.solucion)
     #algoritmo =  Algoritmo(6, 1, 2)
     #algoritmo.ejecutar()
     return "Error al recibir datos"
