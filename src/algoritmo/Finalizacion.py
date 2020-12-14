@@ -4,7 +4,7 @@ class Finalizacion:
 
     def __init__(self):
         self.porcentaje     = 60    # Criterio de porcentaje ( Criterio 1)
-        self.maximo_gen     = 400   # Maximo de generaciones ( Criterio 2)
+        self.maximo_gen     = 600   # Maximo de generaciones ( Criterio 2)
     
     def verificarCriterio(self, criterio, poblacion, generacion):
         result = None
@@ -45,7 +45,11 @@ class Finalizacion:
     
     def criterio3(self, poblacion, generacion):
         fin = None
-
+        # Obtener listado de fitness
+        lista_fitness = [o.fitness for o in poblacion]
+        promedio = sum(lista_fitness) / float(len(lista_fitness))
+        if promedio >= 0 or promedio <= 1.5:
+            fin = min(poblacion, key=lambda x: x.fitness)
         return fin
 
     def getCriterio(self, criterio):
