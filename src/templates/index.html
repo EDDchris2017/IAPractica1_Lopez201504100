@@ -21,25 +21,68 @@
     <br>
 
     <form action = "http://localhost:5000/generar" method = "POST"  enctype = "multipart/form-data">
+        <div class="row">
+        <div class="col">
         <input type = "file" name = "file" />
         <br>
         <label for="ingresarPoblacion">Ingresar Poblacion</label>
-        <input class="form-control" type="text" placeholder="100">
+        <input class="form-control" type="text" placeholder="100" name="poblacion" id="poblacion" value="100">
         <br>
-        <label for="ingresarPoblacion">Seleccione un criterio de Finalizacion</label>
+        <label for="seleccionFinalizacion">Seleccione un criterio de Finalizacion:</label>
+        <br>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-                300 :: Numero maximo de generaciones
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="finalizacion" id="final1" value="1" checked>
             <label class="form-check-label" for="exampleRadios1">
                 60 % de fitness iguales en el grupo
             </label>
-          </div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="finalizacion" id="final2" value="2" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                 300 :: Numero maximo de generaciones
+            </label>
+        </div>
+        <br>
 
+        <label for="seleccionPadres">Seleccione un modo de seleccion de padres:</label>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="padres" id="padres1" value="1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                60 % de los mejores padres seleccionados
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="padres" id="padres2" value="2" >
+            <label class="form-check-label" for="exampleRadios1">
+                Criterio 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="padres" id="padres3" value="3" >
+            <label class="form-check-label" for="exampleRadios1">
+                Criterio 3
+            </label>
+        </div>
+        <br>
         <input type = "submit"/>
+        </div>
+        <div class="col">
+            <!-- Formulario de Ingreso de Prueba de Modelo -->
+            <h3>Predecir nota de estudiante</h3>
+            <h4>Modelo :: </h4>
+                <label  class="col-sm-2 col-form-label">Proyecto 1</label>
+                <input type="text" class="form-control" placeholder="Nota Proyecto 1" name="p1" id="p1">
+
+                <label  class="col-sm-2 col-form-label">Proyecto 2</label>
+                <input type="text" class="form-control" placeholder="Nota Proyecto 2" name="p2" id="p2">
+
+                <label  class="col-sm-2 col-form-label">Proyecto 3</label>
+                <input type="text" class="form-control" placeholder="Nota Proyecto 2" name="p3" id="p3">
+
+                <label  class="col-sm-2 col-form-label">Proyecto 4</label>
+                <input type="text" class="form-control" placeholder="Nota Proyecto 2" name="p4" id="p4">
+        </div>
+        </div>
     </form>
 </body>
