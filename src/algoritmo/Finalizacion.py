@@ -4,7 +4,7 @@ class Finalizacion:
 
     def __init__(self):
         self.porcentaje     = 60    # Criterio de porcentaje ( Criterio 1)
-        self.maximo_gen     = 300   # Maximo de generaciones ( Criterio 2)
+        self.maximo_gen     = 400   # Maximo de generaciones ( Criterio 2)
     
     def verificarCriterio(self, criterio, poblacion, generacion):
         result = None
@@ -22,7 +22,6 @@ class Finalizacion:
         ordenar_poblacion = sorted(ordenar_poblacion)
         cont = 1
         lista_fitness = [o.fitness for o in ordenar_poblacion]
-        print("lista fitness :", lista_fitness)
         moda_fitness = mode(lista_fitness)
         frecuencia_moda = lista_fitness.count(moda_fitness)
         print("MODA : ",moda_fitness," ::","Frecuencia moda ",frecuencia_moda)
@@ -31,9 +30,9 @@ class Finalizacion:
         # Calcular porcentaje de acuerdo a la frecuencia de la moda
         porcentaje = ( frecuencia_moda * 100 ) / len(poblacion)
         print(porcentaje)
-        if porcentaje == self.porcentaje:
+        if int(porcentaje) >= int(self.porcentaje):
             print("Finalizo el algoritmo !!!")
-            input()
+            fin = min(ordenar_poblacion, key=lambda x: x.fitness)
 
         return fin
 

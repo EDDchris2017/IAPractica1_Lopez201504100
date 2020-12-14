@@ -254,3 +254,103 @@ Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% p
 GENERACIONES GENERADAS :300
 MODELO SOLUCION ==> NC = (0.13762394351473306)P1 + (0.031158174753247447)P2 + (0.4563053314982528)P3 + (0.4469414695499334)P4
 
+
+***************
+FECHA Y HORA : 14:0    14/12/2020
+NUMERO POBLACION       :100
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :300 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :300
+MODELO SOLUCION ==> NC = (0.14903525201058576)P1 + (0.011878905274401053)P2 + (0.3466358311107154)P3 + (0.5186605131223225)P4
+
+
+***************
+FECHA Y HORA : 14:5    14/12/2020
+NUMERO POBLACION       :100
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.229847364932255)P1 + (0.060035989826232594)P2 + (0.27274692735937034)P3 + (0.3960746845443479)P4
+
+
+***************
+FECHA Y HORA : 14:7    14/12/2020
+NUMERO POBLACION       :50
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.0901601282314668)P1 + (0.1972293359666475)P2 + (0.16923390049643583)P3 + (0.5661989910916234)P4
+
+
+***************
+FECHA Y HORA : 14:9    14/12/2020
+NUMERO POBLACION       :50
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :550 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :550
+MODELO SOLUCION ==> NC = (0.15763225480642706)P1 + (0.11081344502730905)P2 + (0.4501352624142947)P3 + (0.3166992539699427)P4
+
+
+***************
+FECHA Y HORA : 14:15    14/12/2020
+NUMERO POBLACION       :30
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :550 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :550
+MODELO SOLUCION ==> NC = (0.08132765437185085)P1 + (0.06416397617713931)P2 + (0.3705810676736214)P3 + (0.52674759297041)P4
+
+
+***************
+FECHA Y HORA : 14:17    14/12/2020
+NUMERO POBLACION       :30
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.3405704640165963)P1 + (0.26315270595354034)P2 + (0.0945923110720206)P3 + (0.2615171874361053)P4
+
+
+***************
+FECHA Y HORA : 14:18    14/12/2020
+NUMERO POBLACION       :50
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.0910711325333855)P1 + (0.17309838252224852)P2 + (0.2961904898806531)P3 + (0.4267486146479573)P4
+
+
+***************
+FECHA Y HORA : 14:20    14/12/2020
+NUMERO POBLACION       :70
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.10170190904210497)P1 + (-0.0018482469435188165)P2 + (0.37364083949009963)P3 + (0.4628513573964179)P4
+
+
+***************
+FECHA Y HORA : 14:39    14/12/2020
+NUMERO POBLACION       :70
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :400 numero maximo de generaciones
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :400
+MODELO SOLUCION ==> NC = (0.18023375311451462)P1 + (0.11978771394466925)P2 + (0.2953148304444384)P3 + (0.4278582754129059)P4
+
+
+***************
+FECHA Y HORA : 14:53    14/12/2020
+NUMERO POBLACION       :70
+DOCUMENTO    : Practica1_Entrada.csv
+Criterion Finalizacion :60% de la plobacion con valor fitness igual
+Criterio  Seleccion    :Seleccion de padres como el mejor valor fitness => 60% padres seleccionados
+GENERACIONES GENERADAS :1517
+MODELO SOLUCION ==> NC = (0.18575124064585946)P1 + (0.12929709935587308)P2 + (0.2752271708955867)P3 + (0.4041352845351871)P4
+
