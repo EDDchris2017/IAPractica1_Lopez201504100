@@ -3,8 +3,8 @@ from statistics import mode
 class Finalizacion:
 
     def __init__(self):
-        self.porcentaje     = 60    # Criterio de porcentaje ( Criterio 1)
-        self.maximo_gen     = 600   # Maximo de generaciones ( Criterio 2)
+        self.porcentaje     = 65    # Criterio de porcentaje ( Criterio 1)
+        self.maximo_gen     = 700   # Maximo de generaciones ( Criterio 2)
     
     def verificarCriterio(self, criterio, poblacion, generacion):
         result = None
@@ -48,9 +48,9 @@ class Finalizacion:
         # Obtener listado de fitness
         lista_fitness = [o.fitness for o in poblacion]
         promedio = sum(lista_fitness) / float(len(lista_fitness))
-        if promedio >= 0 and promedio <= 1.5:
+        print(" PROMEDIO  :: ", promedio)
+        if promedio >= 0 and promedio <= 10:
             fin = min(poblacion, key=lambda x: x.fitness)
-            print(" PROMEDIO  :: ", promedio)
         return fin
 
     def getCriterio(self, criterio):
